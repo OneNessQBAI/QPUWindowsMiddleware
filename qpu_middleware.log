@@ -1,0 +1,90 @@
+2024-11-25 06:59:13,022 - __main__ - INFO - Starting Windows QPU Middleware Tests
+2024-11-25 06:59:13,022 - __main__ - INFO - 
+Running Pattern Recognition Test...
+2024-11-25 06:59:13,022 - __main__ - INFO - 
+=== Testing Pattern Recognition ===
+2024-11-25 06:59:13,023 - windows_qpu_middleware.qpu_interface - INFO - Initialized QPU Interface with 4 qubits
+2024-11-25 06:59:13,023 - windows_qpu_middleware.circuit_manager - INFO - Initialized Circuit Manager
+2024-11-25 06:59:13,023 - __main__ - INFO - 
+Processing Pattern 1: [0.5, 0.3, 0.8, 0.1]
+2024-11-25 06:59:13,024 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 06:59:13,042 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 06:59:13,203 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 06:59:13,332 - __main__ - INFO - Pattern Detected: False
+2024-11-25 06:59:13,472 - __main__ - INFO - Confidence Score: 0.250
+2024-11-25 06:59:13,615 - __main__ - INFO - 
+Processing Pattern 2: [0.1, 0.9, 0.2, 0.7]
+2024-11-25 06:59:13,786 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 06:59:13,954 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 06:59:13,956 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 06:59:13,956 - __main__ - INFO - Pattern Detected: False
+2024-11-25 06:59:13,956 - __main__ - INFO - Confidence Score: 0.250
+2024-11-25 06:59:13,957 - __main__ - INFO - 
+Running Quantum Optimization Test...
+2024-11-25 06:59:13,957 - __main__ - INFO - 
+=== Testing Quantum Optimization ===
+2024-11-25 06:59:13,957 - windows_qpu_middleware.qpu_interface - INFO - Initialized QPU Interface with 4 qubits
+2024-11-25 06:59:13,958 - windows_qpu_middleware.circuit_manager - INFO - Initialized Circuit Manager
+2024-11-25 06:59:13,958 - __main__ - INFO - 
+Optimization Test 1
+2024-11-25 06:59:13,958 - __main__ - INFO - Parameters: [0.1, 0.4, 0.6, 0.8]
+2024-11-25 06:59:13,959 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 06:59:14,127 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 06:59:14,279 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 06:59:14,427 - __main__ - INFO - Optimal Solution: q0
+2024-11-25 06:59:14,555 - __main__ - INFO - 
+Optimization Test 2
+2024-11-25 06:59:14,692 - __main__ - INFO - Parameters: [0.7, 0.2, 0.5, 0.3]
+2024-11-25 06:59:14,836 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 06:59:15,000 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 06:59:15,166 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 06:59:15,310 - __main__ - INFO - Optimal Solution: q0
+2024-11-25 06:59:15,452 - __main__ - INFO - 
+Running Error Mitigation Test...
+2024-11-25 06:59:15,591 - __main__ - INFO - 
+=== Testing Error Mitigation ===
+2024-11-25 06:59:15,733 - __main__ - INFO - 
+Test 1: Error Rate = 0.001
+2024-11-25 06:59:15,877 - windows_qpu_middleware.qpu_interface - INFO - Initialized QPU Interface with 2 qubits
+2024-11-25 06:59:15,997 - windows_qpu_middleware.circuit_manager - INFO - Initialized Circuit Manager
+2024-11-25 06:59:16,139 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 06:59:16,410 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 06:59:16,552 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 06:59:16,692 - __main__ - INFO - Raw Results:
+2024-11-25 06:59:16,821 - __main__ - INFO - {'q0': {0: 662, 1: 338}, 'q1': {1: 578, 0: 422}}
+2024-11-25 06:59:16,929 - __main__ - INFO - Mitigated Results:
+2024-11-25 06:59:16,929 - __main__ - INFO - {'q0': {0: 662, 1: 338}, 'q1': {1: 578, 0: 422}}
+2024-11-25 06:59:16,929 - __main__ - INFO - 
+Test 2: Error Rate = 0.1
+2024-11-25 06:59:16,930 - windows_qpu_middleware.qpu_interface - INFO - Initialized QPU Interface with 2 qubits
+2024-11-25 06:59:16,930 - windows_qpu_middleware.circuit_manager - INFO - Initialized Circuit Manager
+2024-11-25 06:59:16,930 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 06:59:16,940 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 06:59:16,940 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 06:59:16,940 - __main__ - INFO - Raw Results:
+2024-11-25 06:59:16,941 - __main__ - INFO - {'q0': {1: 355, 0: 645}, 'q1': {0: 418, 1: 582}}
+2024-11-25 06:59:16,941 - __main__ - INFO - Mitigated Results:
+2024-11-25 06:59:16,941 - __main__ - INFO - {'q0': {1: 355, 0: 645}, 'q1': {0: 418, 1: 582}}
+2024-11-25 06:59:16,941 - __main__ - INFO - 
+=== Test Summary ===
+2024-11-25 06:59:16,942 - __main__ - INFO - Pattern Recognition: PASSED
+2024-11-25 06:59:16,942 - __main__ - INFO - Quantum Optimization: PASSED
+2024-11-25 06:59:16,942 - __main__ - INFO - Error Mitigation: PASSED
+2024-11-25 07:06:55,561 - __main__ - INFO - Starting Windows QPU Middleware Example
+2024-11-25 07:06:55,561 - windows_qpu_middleware.qpu_interface - INFO - Initialized QPU Interface with 4 qubits
+2024-11-25 07:06:55,562 - windows_qpu_middleware.circuit_manager - INFO - Initialized Circuit Manager
+2024-11-25 07:06:55,562 - __main__ - INFO - 
+=== Pattern Recognition Example ===
+2024-11-25 07:06:55,562 - __main__ - INFO - Input pattern: [0.5, 0.3, 0.8, 0.1]
+2024-11-25 07:06:55,563 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 07:06:55,726 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 07:06:55,891 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 07:06:56,059 - __main__ - INFO - Pattern detected: False
+2024-11-25 07:06:56,220 - __main__ - INFO - Confidence score: 0.250
+2024-11-25 07:06:56,382 - __main__ - INFO - 
+=== Optimization Example ===
+2024-11-25 07:06:56,526 - __main__ - INFO - Optimization parameters: [0.1, 0.4, 0.6, 0.8]
+2024-11-25 07:06:56,685 - windows_qpu_middleware.qpu_interface - INFO - Circuit created successfully
+2024-11-25 07:06:56,712 - windows_qpu_middleware.qpu_interface - INFO - Circuit executed successfully
+2024-11-25 07:06:56,714 - windows_qpu_middleware.qpu_interface - INFO - Error mitigation applied successfully
+2024-11-25 07:06:56,714 - __main__ - INFO - Optimal solution: q0
