@@ -1,0 +1,20 @@
+# Core dependencies
+cirq>=1.0.0          # Quantum circuit operations and simulation
+numpy>=1.21.0        # Numerical computations
+pywin32>=305         # Windows service integration (includes win32serviceutil, win32service, win32event, servicemanager)
+logging-handler>=1.0.0  # Enhanced logging capabilities
+typing-extensions>=4.0.0  # Advanced type hinting features
+
+# Development dependencies
+pytest>=6.0.0        # Testing framework
+black>=22.0.0        # Code formatting
+flake8>=3.9.0        # Code linting
+mypy>=0.910         # Static type checking
+
+# Note: The following are built-in Python packages (Python >= 3.8):
+# - dataclasses (for data structures)
+# - enum (for enumerations)
+# - typing (for type hints)
+# - logging (for log management)
+# - pathlib (for file path operations)
+# - socket (for network operations)
